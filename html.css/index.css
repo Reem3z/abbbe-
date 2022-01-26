@@ -1,0 +1,141 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #4400ff;
+    padding: 4%;
+    margin: 0%;
+}
+  
+li {
+    float: left;
+    padding-left: 2%;
+    font-size: 2em;
+}
+
+.pic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 2vw ;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "pic1 pic2 pic3 pic4 pic5"
+      "pic6 pic7 pic8 pic9 pic10"
+      "pic11 pic12 pic13 pic14 pic15"
+      "pic16 pic17 pic18 pic19 pic20";
+      padding-top: 15%;
+      padding-left: 3%;
+      padding-bottom: 2%;
+  }
+  
+.pic1 { grid-area: pic1; }
+  
+.pic2 { grid-area: pic2; }
+  
+.pic3 { grid-area: pic3; }
+  
+.pic4 { grid-area: pic4; }
+  
+.pic5 { grid-area: pic5; }
+  
+.pic6 { grid-area: pic6; }
+  
+.pic7 { grid-area: pic7; }
+  
+.pic8 { grid-area: pic8; }
+  
+.pic9 { grid-area: pic9; }
+  
+.pic10 { grid-area: pic10; }
+  
+.pic11 { grid-area: pic11; }
+  
+.pic12 { grid-area: pic12; }
+  
+.pic13 { grid-area: pic13; }
+  
+.pic14 { grid-area: pic14; }
+  
+.pic15 { grid-area: pic15; }
+  
+.pic16 { grid-area: pic16; }
+  
+.pic17 { grid-area: pic17; }
+  
+.pic18 { grid-area: pic18; }
+  
+.pic19 { grid-area: pic19; }
+  
+.pic20 { grid-area: pic20; }
+ 
+
+.pic-size {
+    width: 17vw;
+    height: 17vw;
+}
+
+@media screen  and (max-width: 800px){ 
+    .pic-container {
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 2vw ;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "pic1 pic2 pic3 pic4 "
+          "pic5 pic6 pic7 pic8"
+          "pic9 pic10 pic11 pic12"
+          "pic13 pic14 pic15 pic16 "
+          "pic17 pic18 pic19 pic20";
+        
+          padding-top: 15%;
+          padding-left: 7%;
+      }
+    
+   
+          
+      
+}
+@media screen  and (max-width: 420px) {
+    .pic-container {
+        display: grid;
+        grid-template-columns:  1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 2vw ;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "pic1 pic2 "
+          "pic3 pic4"
+          "pic5 pic6 "
+          "pic7 pic8"
+          "pic9 pic10"
+          "pic11 pic12"
+          "pic13 pic14 "
+          "pic15 pic16 "
+          "pic17 pic18 "
+          "pic19 pic20";
+        
+          padding-top: 25%;
+          padding-left: 7%;
+      } 
+      .pic-size {
+          width: 35vw;
+          height: 35vw;
+      
+        }
+        li {
+            padding-left: 3%;
+            font-size: 1.5em;
+        }
+
+}
